@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Veterinaria</title>
+</head>
+<body>
+    <div class="gradient"></div>
+    <div id="perros">
+        <h1>Perros</h1>
+        <label for="nombrePerro">Nombre del perro: </label>
+        <input type="text" id="nombrePerro"><br>
+        <label for="pesoPerro">Peso del perro: </label>
+        <input type="number" id="pesoPerro"><br>
+        <label for="edadPerro">Edad del perro: </label>
+        <input type="number" id="edadPerro"><br>
+        <label for="sexoPerro">Sexo del perro: </label>
+        <label for="razaPerro">Raza del perro</label>
+        <input type="text" id="razaPerro">
+        <br>
+        <button onclick="registrarPerro()">Registrar perro</button>
+        <button onclick="listarPerros()">Mostrar info perros</button>
+        <ul id="ulPerros"></ul>
+
+    </div>
+    <div id="gatos">
+        <h1>Gatos</h1>
+        <label for="nombreGato">Nombre del gato: </label>
+        <input type="text" id="nombreGato"><br>
+        <label for="pesoGato">Peso del gato: </label>
+        <input type="number" id="pesoGato"><br>
+        <label for="edadGato">Edad del gato: </label>
+        <input type="number" id="edadGato"><br>
+        <label for="sexoGato">Sexo del gato: </label>
+        <select id="sexoGato">
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+        </select><br>
+        <button onclick="registrarGato()">Registrar gato</button>
+        <button onclick="listarGatos()">Mostrar info gatos</button>
+        <ul id="ulGatos"></ul>
+
+    </div>
+    <div id="conejos">
+        <h1>Conejos</h1>
+        <label for="nombreConejo">Nombre del conejo: </label>
+        <input type="text" id="nombreConejo"><br>
+        <label for="pesoConejo">Peso del conejo: </label>
+        <input type="number" id="pesoConejo"><br>
+        <label for="edadConejo">Edad del conejo: </label>
+        <input type="number" id="edadConejo"><br>
+        <label for="colorConejo">Color del conejo: </label>
+        <input type="text" id="colorConejo"><br>
+        <button onclick="registrarConejo()">Registrar conejo</button>
+        <button onclick="listarConejos()">Mostrar info conejos</button>
+        <ul id="ulConejos"></ul>
+    </div>
+
+    <button onclick="mostrarInfo()">Mostrar info</button>
+
+    <script src="veterinaria.js"></script>
+</body>
+</html>

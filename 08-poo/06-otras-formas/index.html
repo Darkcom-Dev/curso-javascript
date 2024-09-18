@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <title>Otras Formas de Crear Objetos</title>
+  </head>
+
+  <body>
+    <script>
+      let coche1 = new Object();
+
+      coche1.marca = 'Chevrolet';
+      coche1['modelo'] = 'Prisma';
+      coche1.encender = function() {
+        alert("coche encendido");
+      };
+
+      let perro1 = new Object({nombre: 'Simba'});
+
+      let coche2 = Object.create(coche1);
+    </script>
+  </body>
+</html>

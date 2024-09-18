@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Tienda de telefonos</title>
+</head>
+<body onload="listarTelefonos()">
+    <div class="gradient"></div>
+    <div class="content">
+        <h1>Tienda de teléfonos</h1>
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Almacenamiento</th>
+                        <th>Procesador</th>
+                    </tr>
+                </thead>
+                <tbody id="resultados"></tbody>
+            </table>
+        </div>
+        <div class="registro">
+            <label for="id">ID</label>
+            <input id="id" type="number" min="0" max="100" placeholder="ID" value="0"><br>            
+            <label for="marca">Marca</label>
+            <input id="marca" type="text" placeholder="Marca"><br>
+            <label for="modelo">Modelo</label>
+            <input id="modelo" type="text" placeholder="Modelo"><br>
+            <label for="color">Color</label>
+            <input id="color" type="text" placeholder="Color"><br>
+            <label for="almacenamiento">Almacenamiento</label>
+            <input id="almacenamiento" type="text" placeholder="Almacenamiento"><br>
+            <label for="procesador">Procesador</label>
+            <input id="procesador" type="text" placeholder="Procesador"><br>
+            <button onclick="obtenerRegistroConId()">Obtener</button>
+            <button onclick="registrarConId()">Registrar</button>
+            <button onclick="borrarRegistroConId()">Borrar</button>
+            <button onclick="actualizarRegistroConId()">Actualizar</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

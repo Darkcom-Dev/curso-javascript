@@ -1,0 +1,56 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(fotos/fondo.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+p {
+    background-color: beige;
+    color: black;
+    padding: px;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.foto {
+    border: 3px;
+    border-style: solid;
+    border-color: beige;
+    padding: 5px;
+}
+
+.texto-negrita {
+    font-weight: bold;
+}
+
+.texto-cursiva {
+    font-style: italic;
+}
+
+.menu a[href]{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: beige;
+    text-decoration-line: underline;
+}
+
+#subtitulo {
+    text-decoration: underline;
+}
+
+#subtitulo::first-letter {
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}

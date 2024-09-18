@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title>Resumen Cuenta Bancaria</title>
+        <link rel="stylesheet" type="text/css" href="mis-estilos.css">
+        <script src="mis-scripts.js"></script>
+    </head>
+    <body onload="cargarResumen()">
+        <div class="logo">
+            <img src="imagenes/logo.png" />            
+        </div>
+        <div>
+            <h1 id="banco"></h1>
+            <h2 id="sucursal"></h2>
+        </div>
+        <hr>
+        <div>
+            <h3 id="titular"></h3>
+            <p>
+                <b>Nro cuenta:</b>
+                <label id="cuenta"></label>
+            </p>
+        </div>        
+        <hr>
+        <div class="saldo">
+            <div>
+                <img class="fila" src="imagenes/usd.png">
+                <p class="fila" id="usd"></p>
+            </div>
+            <div>
+                <img class="fila" src="imagenes/eur.png">
+                <p class="fila" id="eur"></p>
+            </div>
+        </div>             
+        <hr>
+        <div>
+            <p>
+                <b>CBU:</b>
+                <label id="cbu"></label>
+            </p>
+            <p>
+                <b>Abierta:</b>
+                <label id="abierto"></label>
+            </p>
+        </div>
+    </body>
+</html>

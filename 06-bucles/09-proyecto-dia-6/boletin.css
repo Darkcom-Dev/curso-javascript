@@ -1,0 +1,42 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color:brown;
+}
+
+h3 {
+    color:darkslateblue;
+}
+
+li {
+    font-weight: bolder;
+    color: blue;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 180px;
+    width: 180px;
+}
+
+.info span {
+    font-weight: bolder;
+    font-size: large;
+    color: blue;
+}

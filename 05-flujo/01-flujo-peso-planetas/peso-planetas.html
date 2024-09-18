@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+	<title>Tu peso en otro planeta</title>
+	<style type = "text/css">
+		body
+		{
+			background-color: #003399;
+			color: #6699AA;
+		}
+	
+	</style>
+	</head>
+	<body>
+	<h1>Tu peso en otro planeta</h1>
+	<p>Tu peso varia segun el planeta donde estes</p>
+		<script type = "text/javascript">
+			var gTierra = 9.8, gMarte = 3.7, gJupiter = 24.8;
+			var pesoTierra = parseInt(prompt("Ingresa tu peso real: "));
+			var planeta = parseInt(prompt("Elije 1 para Marte \nElije 2 para Jupiter"));
+			var nombrePlaneta;
+			if (planeta == 1)
+			{
+				pesoFinal = parseInt((pesoTierra * gMarte) /gTierra);
+				nombrePlaneta = "Marte";
+			}
+			else if(planeta == 2)
+			{
+				pesoFinal = parseInt((pesoTierra * gJupiter)/gTierra);
+				nombrePlaneta = "Jupiter";
+			}
+			else 
+			{
+				pesoFinal = 1000000;
+				nombrePlaneta = "Kripton";
+			}
+			document.write("Tu peso en " + nombrePlaneta + " es: <strong>" + pesoFinal + " Kilos</strong>");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px #ff0000;
+    margin-bottom: 0.5em;
+}
+  
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #f0f8ff; /* color de fondo */
+    background-image: linear-gradient(to bottom, #f0f8ff, #ffffff); /* degradado de fondo */
+    background-repeat: no-repeat; /* no se repite la imagen de fondo */
+    background-attachment: fixed; /* fijar la imagen de fondo */
+    background-size: cover; /* cubrir todo el área */
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina los espacios internos */
+}
+
+li {
+    background-color: #f1f1f1; /* Color de fondo */
+    padding: 10px; /* Espacio interno */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+    text-align: center; /* Alineación del texto */
+}

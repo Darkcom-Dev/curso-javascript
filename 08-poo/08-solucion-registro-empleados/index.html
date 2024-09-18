@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Registro de Empleados</title>
+</head>
+<body>
+    <h1>Registro de Empleados</h1>
+    
+        <label for="legajo">Legajo</label>
+        <input type="number" id="legajo">
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+        <br>
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="nacimiento">
+        <br>
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo">
+        <br>
+        <button onclick="registrar()">Enviar</button>
+        <button onclick="listar()">Listar</button>
+    
+    <script src="registro.js"></script>
+</body>
+</html>

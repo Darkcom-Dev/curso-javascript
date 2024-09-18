@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Registro Automoviles</title>
+</head>
+<body>
+    <button onclick="mostrarRegistroAutomoviles()">Mostrar Registro Automoviles</button>
+    <div id="registroAutomoviles">
+        <h1>Registro Automoviles</h1>
+        <label for="marca">Marca: </label>
+        <input type="text" id="marca">
+        <br>
+        <label for="modelo">Modelo: </label>
+        <input type="text" id="modelo">
+        <br>
+        <label for="color">Color: </label>
+        <input type="text" id="color">
+        <br>
+        <label for="anio">Año: </label>
+        <input type="number" id="anio">
+        <br>
+        <label for="titular">Titular: </label>
+        <input type="text" id="titular">
+        <br>
+        <button onclick="registrarAutomovil()">Registrar Automovil</button>
+        <br>
+        <label for="indexAuto">indice de registro: </label>
+        <input type="number" id="indexAuto" min="0" value="0">
+        <button onclick="encenderAuto()">Encender Automovil</button>
+        <br>
+        <label for="nuevoTitular">nuevo titular: </label>
+        <input type="text" id="nuevoTitular">
+        <button onclick="venderAutomovil()">Vender Automovil</button>
+        <p id="mensaje"></p>
+    </div>
+    <script src="registro_automoviles.js"></script>
+</body>
+</html>

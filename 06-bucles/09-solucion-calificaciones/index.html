@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Boletin de Calificaciones</title>
+</head>
+<body onload="listarNotas()">
+    <h1>Boletin de calificaciones</h1>
+    <div class="gradient"></div>
+    <div id="quiz">        
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+        <button onclick="obtenerNotaMasAlta()">Obtener Nota Mas Alta</button>
+        <button onclick="existeAplazo()">Obtener Nota Mas Baja</button>
+        <ul id="notas"></ul>
+    </div>
+    <div id="resultados">
+        <h2>Resultados</h2>
+        
+        <p>Promedio: <span id="promedio"></span></p>
+        <p>Nota mas alta: <span id="notaMasAlta"></span></p>
+        <p>Nota mas baja: <span id="notaMasBaja"></span></p>
+    </div>
+    <script src="calificaciones.js"></script>
+</body>
+</html>

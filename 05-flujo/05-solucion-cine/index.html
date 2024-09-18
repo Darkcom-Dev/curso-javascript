@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Recomendaciones de cine</title>
+</head>
+<body>
+    <div class="gradient"></div>
+    <h1>Obten una recomendacion acorde a tu edad</h1>
+    <p>Ingresa tu edad y selecciona un genero de tu gusto para recibir una recomendacion</p>
+    <div id="formulario">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" min="0" max="100">
+        <button id="drama" onclick="recomendar('drama')">Drama</button>
+        <button id="musical" onclick="recomendar('musical')">Musical</button>
+        <button id="comedia" onclick="recomendar('comedia')">Comedia</button>
+        <button id="crimen" onclick="recomendar('crimen')">Crimen</button>
+    </div>
+    <h3 id="recomendacion">Recomendacion</h3>
+    <script src="cine.js"></script>
+</body>
+</html>

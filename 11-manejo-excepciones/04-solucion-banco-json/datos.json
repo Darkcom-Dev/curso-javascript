@@ -1,0 +1,11 @@
+{   
+    "banco":"BBVA",
+    "sucursal":"CABA",
+    "nombre":"Pedro Toledo",
+    "nro_cuenta":"234-3451-9400",
+    "saldo":{
+        "monto_dolares":1000,
+        "monto_euros":100
+    },
+    "cbu": "234-3451-9400-1234-5678"
+}

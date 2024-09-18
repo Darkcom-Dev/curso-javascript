@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Concurso de preguntas</title>
+</head>
+<body onload="initCounters()">
+    <h1>Concurso de preguntas</h1>
+    <p>Pregunta 1</p>
+    <input type="text" id="pregunta 1">
+    <p>preguna 2</p>
+    <input type="text" id="pregunta 2">
+    <p>Pregunta 3</p>
+    <input type="text" id="pregunta 3">
+    <p>Pregunta 4</p>
+    <input type="text" id="pregunta 4">
+    <p>Pregunta 5</p>
+    <input type="text" id="pregunta 5">
+
+
+    <audio id="audioPlayer">
+        <source src="h_Blink1.wav" type="audio/wav">
+    </audio controls>
+    <h1 id="tiempo">00:00:00</h1>
+    <button onclick="sendResponse()">Enviar</button>
+    <button onclick="retry()">Reiniciar</button>
+    <script src="juego.js"></script>
+</body>
+</html>

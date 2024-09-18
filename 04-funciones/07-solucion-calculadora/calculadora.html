@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="gradient"></div>
+    <div class="content">
+        <div class="inputs">
+            <input type="number" id="number1"></input>
+            <input type="number" id="number2"></input>
+        </div>
+        <div class="basicas">
+            <button id="suma" onclick="suma()">suma</button>
+            <button id="resta" onclick="resta()">resta</button>
+            <button id="multiplicacion" onclick="multiplicacion()">multiplicacion</button>
+            <button id="division" onclick="division()">division</button>
+        </div>
+        <div class="avanzadas">
+            <button id="potencia" onclick="potencia()">potencia</button>
+            <button id="radicacion" onclick="radicacion()">radicacion</button>
+            <button id="aleatorio" onclick="aleatorio()">aleatorio</button>
+            <button id="absoluto" onclick="absoluto()">absoluto</button>
+        </div>
+        <div class="resultadoInput">
+            <input type="number" id="resultados"></input>
+        </div>
+        <div class="redondeadores">
+            <button id="round" onclick="round()">round</button>
+            <button id="floor" onclick="floor()">floor</button>
+            <button id="ceil" onclick="ceil()">ceil</button>
+        </div>
+        
+        
+    </div>
+    
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
