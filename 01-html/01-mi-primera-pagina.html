@@ -1,17 +1,41 @@
 <!DOCTYPE html>
     <head>
-        <title>Dia1_01-MiPrimeraPagina</title>
-        <style>body{background-color: Moccasin}</style>
+        <!--Esto es un comentario-->
+        <!--Un comentario es una linea de código que será ignorada por el navegador-->
+        <!--pero nos ayuda a recordar que hace ciertas lineas de código-->
+        <!--sobretodo cuando ha pasado el tiempo y no recordamos que hacia ese trozo de código-->
+        <title>Mi Primera Página</title><!--Esto le pone un titulo a la pestaña del navegador-->
+        <style>body{background-color: Moccasin}</style><!--Style es una etiqueta que nos permite estilar la página-->
     </head>
     <body>
+        <!--La estiqueta script permite escribir código dde JavaScript dentro de HTML-->
         <script>
+            //Esto es un comentario en JavaScript
+            /*Esto es un comentario
+            multilinea
+
+            Vemos que hay una funcion que es un trozo de código que se carga en memoria, 
+            esperando ser invocado
+            */
             function ponerTituloRojo(){
                 document.getElementById("titulo").style="color: red"
             }
+            // En este caso la funcion ponerTituloRojo será invocado al posar el mouse sobre el titulo
         </script>
-        <h1 id="titulo" onmouseover="ponerTituloRojo()">Bienvenido a JavaScript TOTAL</h1>
+        <h1 id="titulo" onmouseover="ponerTituloRojo()">Bienvenido al curso de JavaScript</h1>
         <h2>El primer paso es el más grande</h2>
-        <p>Esta página es muy sencilla</p>
-        <p>(pero tiene un secreto >>> Presiona F12)</p>
+        <p>Esta página es muy sencilla, parece una web de los años 90, pero esta es la base minimalista
+            para construir una web minima.
+            <br>
+            Esta web está compuesta de 3 Etiquetas H1, H2 y P, 
+            en la siguiente lección aprenderemos mas de estas etiquetas
+            <br>
+            Posa el mouse sobre el título
+        </p>
+        <p>(pero tiene un secreto >>> Presiona F12)
+            <br>
+            <br>
+            Cuando acabes, regresa al menú principal y ve a la segunda lección
+        </p>
     </body>
 </html>
